@@ -1,0 +1,43 @@
+section {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.brand-logo{
+    margin-left: 20px;
+}
+
+#nav-mobile li a{
+    margin-right: 20px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.container{
+    text-align: center;
+}
+
+table{
+    margin: 0 auto;
+    width: 60%;
+}
+
+table tr th{
+        text-align: center;
+}
+
+table tr td{
+        text-align: center;
+}
+
+form{
+    width: 60%;
+}
+
+.btn{
+    float: right;
+}

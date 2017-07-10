@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Garage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Garage</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="home.html">Home</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <ul id="tabs-swipe-demo" class="tabs">
+                <li class="tab col s3"><a href="#test-swipe-1">Add Car</a></li>
+                <li class="tab col s3"><a href="#test-swipe-2">Garage</a></li>
+                <li class="tab col s3"><a href="#test-swipe-3">Fixed Cars</a></li>
+            </ul>
+            <div id="test-swipe-1" class="col s12">
+                <!--add car-->
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input placeholder="Enter License Here" id="license" type="text" class="validate">
+                            </div>
+                            <div class="input-field col s6">
+                                <input placeholder="Enter Model Here" id="model" type="text" class="validate">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s3">
+                                <input disabled value="Yes" id="disabled" type="text" class="validate">
+                                <label for="disabled">Damaged</label>
+                            </div>
+                        </div>
+
+                        <!-- Dropdown Trigger -->
+                        <a class="dropdown-button btn" href="#" data-activates="dropdown1">Parts</a>
+
+                        <!-- Dropdown Structure -->
+                        <ul id="dropdown1" class="dropdown-content">
+                            <li><a href="#!">one</a></li>
+                            <li><a href="#!">two</a></li>
+                            <li><a href="#!">three</a></li>
+                        </ul>
+                        <div class="row">
+                            <button class="btn" onclick="addCars()">Add car</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div id="test-swipe-2" class="col s12">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>License</th>
+                            <th>Model</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="carDisplay">
+                    </tbody>
+                </table>
+            </div>
+            <div id="test-swipe-3" class="col s12 green">
+            </div>
+        </section>
+        <footer class="page-footer">
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2014 Copyright Text
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+<script src="./js/core.js"></script>
+<script src="./js/init.js"></script>
+
+</html>
